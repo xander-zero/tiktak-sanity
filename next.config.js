@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["pps.whatsapp.net"],
+    domains: ["pps.whatsapp.net", "lh3.googleusercontent.com"],
   },
 };
 

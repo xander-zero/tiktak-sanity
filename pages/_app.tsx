@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import MainLayout from "../layout/MainLayout";
-
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -16,9 +16,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
+    <GoogleOAuthProvider
+      clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}
+    >
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </GoogleOAuthProvider>
   );
 }
 
