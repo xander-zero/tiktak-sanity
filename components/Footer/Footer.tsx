@@ -5,7 +5,10 @@ import ListFooter from "./ListFooter/ListFooter";
 function Footer() {
   return (
     <div className="mt-6 hidden xl:block">
-      <ListFooter items={footerList1} />
+      <ListFooter items={footerList1} mt={false} />
+      <ListFooter items={footerList2} mt={true} />
+      <ListFooter items={footerList3} />
+      <p className="text-gray-400 text-sm mt-5">2020 Xander TikTik</p>
     </div>
   );
 }
