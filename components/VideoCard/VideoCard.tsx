@@ -78,7 +78,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
               ref={videoRef}
               src={post.video.asset.url}
               loop
-              className="lg:w-[500px] h-[300px] md:h-[400px] lg:h[530px] w-[200px] cursor-pointer bg-gray-100"
+              className="lg:w-[600px] h-[300px] md:h-[400px] lg:h[530px] w-[200px] cursor-pointer bg-gray-100"
             ></video>
           </Link>
           {isHover && (
